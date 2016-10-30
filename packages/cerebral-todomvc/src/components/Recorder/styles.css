@@ -1,0 +1,11 @@
+.Recorder {
+  height: 25px;
+  line-height: 19px;
+  border: 1px solid #333;
+  background-color: rgba(175, 47, 47, 0.15);
+  border-radius: 3px;
+  color: #333;
+  padding: 3px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}

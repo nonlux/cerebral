@@ -4,8 +4,13 @@ import visibleTodosRefs from './visibleTodosRefs'
 export default Computed({
   visibleTodosRefs: visibleTodosRefs,
   todos: 'app.todos.**'
-}, props => {
-  return props.visibleTodosRefs.filter((ref) => {
-    return !props.todos[ref].completed
-  }).length === 0 && props.visibleTodosRefs.length !== 0
-})
+}, isAllChecked)
+
+export function isAllChecked ({visibleTodosRefs = [], todos = {}}) {
+  return visibleTodosRefs.filter((ref) => {
+    if (!todos[ref]) {
+      throw Error(`failed to find todo with '${ref}' ref.`)
+    }
+    return !todos[ref].completed
+  }).length === 0 && visibleTodosRefs.length !== 0
+}
