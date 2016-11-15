@@ -15,6 +15,7 @@ import set from './set'
 import update from './update'
 import remove from './remove'
 import transaction from './transaction'
+import sendPasswordResetEmail from './sendPasswordResetEmail'
 import createUserWithEmailAndPassword from './createUserWithEmailAndPassword'
 import signInWithEmailAndPassword from './signInWithEmailAndPassword'
 import signOutService from './signOut'
@@ -61,6 +62,7 @@ export default function FirebaseProviderFactory (options = { payload: {} }) {
         set,
         remove,
         transaction,
+        sendPasswordResetEmail,
         task: createTask(options),
         createUserWithEmailAndPassword,
         signInWithEmailAndPassword,
