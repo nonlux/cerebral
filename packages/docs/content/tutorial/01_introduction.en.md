@@ -113,4 +113,4 @@ This the entry point of your application and this is where we bring it all toget
 If you are not familiar with [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html), the syntax that looks like HTML, it can be explained briefly as "some sugar over normal JavaScript". This is **not** html in JavaScript, it is pure JavaScript, it just allows you to define the UI with familiar syntax. You might think this is "icky", but trust us... UIs has become a lot more complex over the years and we need the power of JavaScript to describe and manage them!
 
 ### Installing the debugger
-Please install either the standalone or chrome extension debugger, following [these instructions](../get-started/02_debugger.html)
+Please install either the standalone or chrome extension debugger, following [these instructions](../install/02_debugger.html)
